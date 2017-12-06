@@ -15,7 +15,7 @@ if(ARGOS_BUILD_FOR_SIMULATOR)
   #
   # boundary detection
   #
-  add_executable(topology topology.c)
+  add_executable(topology kilobot.c)
   # link against main plugin and subdirectory libraries
   target_link_libraries(topology argos3plugin_simulator_kilolib kb state lib)
 endif(ARGOS_BUILD_FOR_SIMULATOR)
